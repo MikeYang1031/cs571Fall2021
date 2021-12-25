@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" width="50" height="40" class="d-inline-block align-mid" alt="">
+            Badger Shop
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> All <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-bag-dash-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zM6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1H6z" />
+                        </svg></a>
+
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Pick Up <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                            <path
+                                d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg></a>
+
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Brands <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-badge-tm" viewBox="0 0 16 16">
+                            <path
+                                d="M5.295 11V5.995H7V5H2.403v.994h1.701V11h1.19zm3.397 0V7.01h.058l1.428 3.239h.773l1.42-3.24h.057V11H13.5V5.001h-1.2l-1.71 3.894h-.039l-1.71-3.894H7.634V11h1.06z" />
+                            <path
+                                d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z" />
+                        </svg>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">brand1</a>
+                        <a class="dropdown-item" href="#">brand2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">brand3</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Orders <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z" />
+                            <path fill-rule="evenodd"
+                                d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+                        </svg></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Log In <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+                            <path
+                                d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
+                            <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="card bg-danger text-white">
+        <div class="card-body">Flash Sale! 5lbs of brazil nuts for just $9.99 today — we badgers love 'em!</div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="card" style="width: 28rem;">
+            <img src="o.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">check our fresh local goods</p>
+            </div>
+        </div>
+        <div class="card" style="width: 28rem;">
+            <img src="p.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">check our fresh local goods</p>
+            </div>
+        </div>
+
+
+        <div class="card" style="width: 28rem;">
+            <img src="t.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">check our fresh local goods</p>
+            </div>
+        </div>
+        <div class="card" style="width: 28rem;">
+            <img src="h.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">check our fresh local goods</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="card" style="width: 28rem;">
+            <img src="o.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">check our fresh local goods</p>
+            </div>
+        </div>
+        <div class="card" style="width: 28rem;">
+            <img src="p.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">check our fresh local goods</p>
+            </div>
+        </div>
+
+
+        <div class="card" style="width: 28rem;">
+            <img src="t.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">check our fresh local goods</p>
+            </div>
+        </div>
+        <div class="card" style="width: 28rem;">
+            <img src="h.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">check our fresh local goods</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5">Order #0616803</h2>
+                <p class="lead">Order Placed: 2021-09-03T12:45:55.622Z Total: 66.79</p>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Brand</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">quality</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Badger Foods</td>
+                        <td>Frozen Margherita Pizza, 10oz</td>
+                        <td>1</td>
+                        <td>3.99</td>
+                    </tr>
+                    <tr>
+                        <td>Badger Foods</td>
+                        <td>Madras Curry Sauce, 12.5oz</td>
+                        <td>6</td>
+                        <td>3.69</td>
+                    </tr>
+                    <tr>
+                        <td>Bucky's Deli</td>
+                        <td>Meatball Banh Mi</td>
+                        <td>1</td>
+                        <td>6.50</td>
+                    </tr>
+                    <tr>
+                        <td>New Bublr</td>
+                        <td>Pomegranate Kombucha, 16fl oz</td>
+                        <td>1</td>
+                        <td>3.69</td>
+                    </tr>
+                    <tr>
+                        <td>New Bublr</td>
+                        <td>Spotted Cat Beer (6-pack)</td>
+                        <td>2</td>
+                        <td>12.99</td>
+                    </tr>
+                    <tr>
+                        <td>Bucky's Deli</td>
+                        <td>Fried Cheese Curds</td>
+                        <td>1</td>
+                        <td>4.49</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Order #9033042</h2>
+                <p class="lead">Order Placed: 2021-09-16T06:48:57.633Z Total: 211.29</p>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Brand</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">quality</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Boutique de Madison</td>
+                        <td>High-Rise Skinny Jean (Vintage Blue)</td>
+                        <td>1</td>
+                        <td>50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Boutique de Madison</td>
+                        <td>Lightweight French Terry Crew (Black)</td>
+                        <td>1</td>
+                        <td>38.99</td>
+                    </tr>
+                    <tr>
+                        <td>Buckylemon</td>
+                        <td>Performance Shorts</td>
+                        <td>2</td>
+                        <td>29.99</td>
+                    </tr>
+                    <tr>
+                        <td>Bucky Outfitters</td>
+                        <td>Stainless Keyring</td>
+                        <td>1</td>
+                        <td>9.49</td>
+                    </tr>
+                    <tr>
+                        <td>StudyBucky</td>
+                        <td>1-Subject Notebook (2-pack)</td>
+                        <td>3</td>
+                        <td>8.95</td>
+                    </tr>
+                    <tr>
+                        <td>StudyBucky</td>
+                        <td>Gel Pen (Medium Point, 6-pack)</td>
+                        <td>2</td>
+                        <td>12.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="bg-danger mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Manage Your Subscriptions</h2>
+                <p class="lead">You are currently subscribed to 5 subscriptions.</p>
+                <p class="lead">Next Automatic Payment: 2021-10-23T00:00:00.000Z </p>
+            </div>
+            <table class="table table-striped text-white">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Badger Tunes</td>
+                        <td>Unlimited music streaming</td>
+                        <td>5.99</td>
+                    </tr>
+                    <tr>
+                        <td>BadgerFlix</td>
+                        <td>HD-quality video streaming</td>
+                        <td>12.49</td>
+                    </tr>
+                    <tr>
+                        <td>Badger Prime</td>
+                        <td>Free same-day delivery of grocery items</td>
+                        <td>9.99</td>
+                    </tr>
+                    <tr>
+                        <td>Bucky's Cheese Club</td>
+                        <td>Monthly delivered, curated cheeses from Wisconsin</td>
+                        <td>30.00</td>
+                    </tr>
+                    <tr>
+                        <td>Holy Cow</td>
+                        <td>$10 ice cream vouchers every week</td>
+                        <td>7.99</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <form method="get" action="./account_info/order_history_report.pdf">
+                <button type="submit" class="btn btn-light">Download Order History</button>
+            </form>
+            <br>
+            <form method="get" action="./account_info/subscription_invoice.pdf">
+                <button type="submit" class="btn btn-light">Download Subscription Invoice</button>
+            </form>
+            <br>
+        </div>
+        <div class="bg-danger mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Your Family Plan Members</h2>
+            </div>
+            <table class="table table-striped text-white">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Goldy Golpher</td>
+                        <td>goldy.gopher@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Pioneer Pete</td>
+                        <td>pioneer.pete@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form>
+                <button type="submit" formaction='javascript:addFamilyMember();' class="btn btn-light">Add a
+                    Member</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <ul class="list-group">
+            <li class="list-group-item bg-danger" aria-current="true">Your Account</li>
+            <li class="list-group-item">Name: Badger</li>
+            <li class="list-group-item">Email: badger@wisc.com</li>
+            <li class="list-group-item">Phone Number: 555.555.1234</li>
+            <li class="list-group-item">Subscribed to membership services: <p id="membershipSubscription"
+                    style="display: inline"> true</p>
+            </li>
+            <form>
+                <button type="submit" formaction='javascript:toggleMembershipSubscription();'
+                    class="btn btn-dark">Subscribe/Unsubscribe</button>
+                <button type="submit" formaction='javascript:addFamilyMember();' class="btn btn-dark">Contact
+                    Us</button>
+            </form>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
